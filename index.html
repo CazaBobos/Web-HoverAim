@@ -8,13 +8,34 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container pointer">
-        <span id="points"></span>
-        <span id="ned"></span>
-        <span id="timer"></span>
+    <div class="settings">
+        <div class="group">
+            <span class="title">HoverGame</span>
+            <span class="status">...</span>
+        </div>
+        <div class="group">
+            <input type="text" id="pNeed" placeholder="Points Needed">
+            <span>Min: 5 - Default: 30</span>
+        </div>
+        <div class="group">
+            <input type="text" id="pTime" placeholder="Time">
+            <span>Min: 10 - Default: 30</span>
+        </div>
+        <div class="group">
+            <input type="text" id="pSize" placeholder="Circle Size">
+            <span>Min: 5 - Default: 50</span>
+        </div>
+        <input type="button" id="btnRestart" value="Restart">
     </div>
-    <div class="container">
-        <div id="player"></div>
+    <div class="gameBoard">
+        <div class="container pointer">
+            <span id="points"></span>
+            <span id="need"></span>
+            <span id="timer"></span>
+        </div>
+        <div class="container">
+            <div id="player"></div>
+        </div>
     </div>
     <script defer src="js/script.js"></script>
 </body>
